@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/dojo/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/dojo/static/js/main.bfe8801d.chunk.js",
+    "main.js.map": "/dojo/static/js/main.bfe8801d.chunk.js.map",
+    "runtime-main.js": "/dojo/static/js/runtime-main.a21ef913.js",
+    "runtime-main.js.map": "/dojo/static/js/runtime-main.a21ef913.js.map",
+    "static/js/2.0dd279a2.chunk.js": "/dojo/static/js/2.0dd279a2.chunk.js",
+    "static/js/2.0dd279a2.chunk.js.map": "/dojo/static/js/2.0dd279a2.chunk.js.map",
+    "static/js/3.2bc4a0f5.chunk.js": "/dojo/static/js/3.2bc4a0f5.chunk.js",
+    "static/js/3.2bc4a0f5.chunk.js.map": "/dojo/static/js/3.2bc4a0f5.chunk.js.map",
+    "index.html": "/dojo/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/dojo/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.0dd279a2.chunk.js.LICENSE.txt": "/dojo/static/js/2.0dd279a2.chunk.js.LICENSE.txt",
+    "static/media/karate8.b41b495a.jpg": "/dojo/static/media/karate8.b41b495a.jpg",
+    "static/media/logo.103b5fa1.svg": "/dojo/static/media/logo.103b5fa1.svg",
+    "static/media/logowh1.c7550bf8.png": "/dojo/static/media/logowh1.c7550bf8.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a21ef913.js",
+    "static/js/2.0dd279a2.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.bfe8801d.chunk.js"
+  ]
+}
