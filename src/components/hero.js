@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
-import HigaLogo from '../img/logowh1.png';
-import heroPic from '../img/galeria/karate8.jpg';
 import { Typography, Button } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({

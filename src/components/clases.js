@@ -1,20 +1,19 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import { Typography, Button } from '@material-ui/core';
-
+import {Button, Typography} from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   root: {
     flexGrow: 1,
     background: 'dodgerblue',
-    height: '70vh',
+    minHeight: '100vh',
     [theme.breakpoints.down('sm')]: {
-      height: '50vh'
+      minHeight: '100vh'
     },
   },
   clasesButon: {
-      height: '60px',
+      minHeight: '60px',
       width: '160px',
       backgroundColor: '#0c0c0c',
       color: 'white',
@@ -27,14 +26,14 @@ const useStyles = makeStyles((theme) => ({
 
   },
   tradicional: {
-      backgroundPosition: 'center center',  
       backgroundColor:'lightpink',
-      background: 'url(https://cdn.thestandnews.com/media/photos/cache/21768913_726487807534610_7404133375681036704_o_1sw9l_1200x0.jpg)',
-      height: '70vh',
+      background: 'url(https://cdn.hobbyconsolas.com/sites/navi.axelspringer.es/public/media/image/2015/06/490986-semana-street-fighter-asi-es-ryu.jpg)',
+      height: '100vh',
       display: 'flex',
       flexDirection:'column',
-      backgroundPosition: 'center center',  
       backgroundSize: 'cover',
+      backgroundAttachment: 'fixed',
+      backgroundPositionX: 'start',
       justifyContent: 'center',
       alignItems:'center',
       [theme.breakpoints.down('sm')]: {
@@ -42,19 +41,38 @@ const useStyles = makeStyles((theme) => ({
       },
   },
   deportivo: {
-    backgroundPosition: 'center center',
+    backgroundPosition: 'start center',
     backgroundColor: 'lightblue',
-    background: 'url(https://www.seibuhochi.com/wp-content/uploads/2020/06/191203sksmdr-1024x788.jpg)',
-    height: '70vh',
+    background: 'url(https://www.xtrafondos.com/wallpapers/akuma-de-street-fighter-4963.jpg)',
+    height: '100vh',
     display: 'flex',
     flexDirection:'column',
     backgroundSize: 'cover',
-    backgroundPosition: 'center center',
+    backgroundAttachment: 'fixed',
     justifyContent: 'center',
     alignItems:'center',
     [theme.breakpoints.down('sm')]: {
       backgroundPosition: 'left',  
     },
+  },  heroTitle: {
+    textTransform: 'uppercase',
+    fontSize: '6.5vw',
+    lineHeight: '1',
+    fontWeight: '900',
+    marginTop:'8%',
+    marginBottom: '2%',
+    textAlign: 'center',
+    color:'#0c0c0c',
+    [theme.breakpoints.down('sm')]: {
+      fontSize: '12vw',
+    },
+},
+  highText: {
+    display: 'inline-block',
+    lineHeight: '0.1rem',
+    paddingBottom: '0.5em',
+    color: '#0c0c0c',
+    backgroundColor: '#F26444'
   }
 }));
 
@@ -64,11 +82,13 @@ export default function Clases() {
   return (
     <div className={classes.root}>
       <Grid container spacing={12} className={classes.clases}>
-          <Grid item xs={6} className={classes.tradicional}> 
-            <Button  className={classes.clasesButon} >Tradicional</Button>
+          <Grid item xs={12} className={classes.tradicional}> 
+          <Typography className={classes.heroTitle}><mark className={classes.highText}>facilisi</mark> <mark className={classes.highText}>cras</mark> fermentum odio</Typography>
+            <Button  className={classes.clasesButon} >Leer más</Button>
           </Grid>
-          <Grid item xs={6} className={classes.deportivo}> 
-            <Button  className={classes.clasesButon}>Deportivo</Button>
+          <Grid item xs={12} className={classes.deportivo}>
+          <Typography className={classes.heroTitle}> <mark className={classes.highText}>enim</mark> <mark className={classes.highText}>nulla</mark> aliquet porttitor <mark className={classes.highText}>lacus luctus</mark></Typography>
+            <Button  className={classes.clasesButon}>Leer más</Button>
           </Grid>
       </Grid>
     </div>
